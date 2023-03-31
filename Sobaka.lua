@@ -177,7 +177,7 @@ EspTab:CreateButton("Armor ESP",  function()  --you dont need "arg" for a button
                     esp.ZIndex = 0
                     esp.Size = Vector3.new(1, 1, 1)
                     esp.Transparency = 0.8
-                    esp.Color3 = Color3.fromRGB(0,0,0)
+                    esp.Color3 = Color3.fromRGB(0,0,255)
                     esp.AlwaysOnTop = true
                     esp.Name = "EspBox"
                 end
