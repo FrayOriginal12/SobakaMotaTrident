@@ -144,7 +144,26 @@ end)
 
 EspTab:CreateButton("Player ESP+",  function()  --you dont need "arg" for a button
 	  while wait(10) do
-    for i, childrik in ipairs(workspace:GetDescendants()) do
+ for i, childrik in ipairs(workspace:GetDescendants()) do
+        if childrik:FindFirstChild("Torso") then
+            if not childrik:FindFirstChild("EspBox") then
+                if childrik ~= game.Players.LocalPlayer.Character then
+                    local esp = Instance.new("BoxHandleAdornment",childrik)
+                    esp.Adornee = childrik
+                    esp.ZIndex = 0
+                    esp.Size = Vector3.new(2, 2, 1)
+                    esp.Transparency = 0.8
+                    esp.Color3 = Color3.fromRGB(255,165,0)
+                    esp.AlwaysOnTop = true
+                    esp.Name = "EspBox"
+                end
+            end
+        end
+    end
+end
+Wait(0.1)
+
+    for i, childrik in ipairs(game.ReplicatedStorage:GetDescendants()) do
         if childrik:FindFirstChild("HumanoidRootPart") then
             if not childrik:FindFirstChild("EspBox") then
                 if childrik ~= game.Players.LocalPlayer.Character then
@@ -381,7 +400,7 @@ MeshGlowStick.MeshId = "rbxassetid://2425219842"
 MeshGlowStick.Scale = Vector3.new(0.01, 0.01, 0.01)
 MeshGlowStick.Parent.Color = Color3.fromRGB(255, 0, 0)
 game:GetService("ReplicatedStorage").HandModels.Glowstick.Glowstick.GlowPart.PointLight.Color = Color3.fromRGB(255, 0, 0)
-game:GetService("ReplicatedStorage").HandModels.Glowstick.Glowstick.Ends.Trancparency = 1
+game:GetService("ReplicatedStorage").HandModels.Glowstick.Glowstick.Ends.Transparency = 1
 end)
 
 
