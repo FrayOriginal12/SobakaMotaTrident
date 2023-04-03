@@ -378,8 +378,8 @@ local MeshGlowStick = Instance.new("FileMesh")
 MeshGlowStick.Name = "Mesh"
 MeshGlowStick.Parent = game:GetService("ReplicatedStorage").HandModels.Glowstick.Glowstick.GlowPart
 MeshGlowStick.MeshId = "rbxassetid://2425219842"
-MeshGlowStick.Scale = Vector3.new(0.1, 0.1, 0.1)
-
+MeshGlowStick.Scale = Vector3.new(0.01, 0.01, 0.01)
+MeshGlowStick.Parent.Color = Color3.fromRGB(255, 0, 0)
 end)
 
 
