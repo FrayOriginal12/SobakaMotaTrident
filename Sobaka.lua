@@ -41,7 +41,7 @@ textSOFT.BackgroundTransparency = 0
 textSOFT.TextSize = 25
 textSOFT.Transparency = 0.9
 textSOFT.TextColor3 = Color3.new(255, 255, 255)
-textSOFT.Text = "sobaka-private 3.0-Alpha"
+textSOFT.Text = "sobaka-private 4.0"
 textSOFT.Draggable = true
 
 wait(0.01)
