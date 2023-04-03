@@ -380,6 +380,8 @@ MeshGlowStick.Parent = game:GetService("ReplicatedStorage").HandModels.Glowstick
 MeshGlowStick.MeshId = "rbxassetid://2425219842"
 MeshGlowStick.Scale = Vector3.new(0.01, 0.01, 0.01)
 MeshGlowStick.Parent.Color = Color3.fromRGB(255, 0, 0)
+game:GetService("ReplicatedStorage").HandModels.Glowstick.Glowstick.GlowPart.PointLight.Color = Color3.fromRGB(255, 0, 0)
+game:GetService("ReplicatedStorage").HandModels.Glowstick.Glowstick.Ends.Trancparency = 1
 end)
 
 
